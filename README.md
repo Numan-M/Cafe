@@ -1,1 +1,1 @@
-# Cafe
+# MiniProject Cafe app
