@@ -1,41 +1,31 @@
 import csv
-
+import os
 # # 1. View
 def view_list(viewed_list,*keys):
     print('')
+    line = ''
     i = 0
     for items in viewed_list:
-        print (f'{i}| {items[keys[0]]}: {items[keys[1]]}')
+        line2 = f'{i}| {items[keys[0]]}: {items[keys[1]]}\n'
         i += 1
-    return 
+        line += line2
+    return line
 
 # # 2. Add
-def adding_to_list(menu_name,some_list,*keys):
-    new_entry = input(f'\nEnter {menu_name} {keys[0]}\n>> ')
-    new_entry_input = input(f'\nEnter {menu_name} {keys[1]}\n>> ')
-
-    if some_list == products_list:
-        some_list.append({f"{keys[0]}": f"{new_entry.title()}",
-                        f"{keys[1]}": f"{float(new_entry_input)}"})
-        print(f'\n{new_entry.title()} has been added. {keys[1]} has been set to {float(new_entry_input)}.')
-
-    elif some_list == couriers_list:
-        some_list.append({f"{keys[0]}": f"{new_entry.title()}",
-                        f"{keys[1]}": f"{new_entry_input}"})
-        print(f'\n{new_entry.title()} has been added. {keys[1]} has been set to {new_entry_input}.')
-    return
+def adding_to_list(name,input_val,some_list,type,*keys):
+    some_list.append({keys[0]: name.title(), keys[1]: type(input_val)})
+    print(f'\n{name.title()} has been added. {keys[1]} has been set to {type(input_val)}.')
+    return some_list
 
 # # 3. Rename
-def renaming_list_index(menu_name,some_list,):
-    rename_index = int(input(f'\nSelect {menu_name} Index:\n>> '))
+def renaming_list_via_index(some_list,rename_index):
     some_list_copy = some_list[rename_index].copy()
-
     for key,value in some_list[rename_index].items():
         value = input(f'{key}: ' )
         if value == '':
             value = some_list_copy[f'{key}']
         some_list[rename_index].update({key: value})
-    return 
+    return some_list
 
 
 
@@ -43,29 +33,36 @@ def renaming_list_index(menu_name,some_list,):
 def remove_entry(menu_name,some_list):
     removal_index = int(input(f'Which {menu_name} would you like to remove?\n>> '))
     print(f'\n{menu_name} no. {removal_index} has been removed.')
-    return some_list.remove(some_list[removal_index])
+    some_list.remove(some_list[removal_index])
+    return some_list
 
 
-def second_menu(menu_name,menu_output,some_list,*keys):
+def second_menu(menu_name,menu_output,some_list,type,*keys):
     # # 0. Return
     if menu_output == 0:
         return
     # # 1. View
     if menu_output == 1:
-        view_list(some_list,*keys)
+        listings = view_list(some_list,*keys)
+        print(listings)
         return main_menu(main_menu_input)
     # # 2. Add
     if menu_output == 2:
-        adding_to_list(f'{menu_name}',some_list,*keys)
+        new_entry = input(f'\nEnter {menu_name} {keys[0]}\n>> ')
+        new_entry_input = input(f'\nEnter {menu_name} {keys[1]}\n>> ')
+        adding_to_list(new_entry,new_entry_input,some_list,type,*keys)
         return main_menu(main_menu_input) 
     # # 3. Rename
     if menu_output == 3:
-        view_list(some_list,*keys)
-        renaming_list_index(f'{menu_name}',some_list)
+        listings = view_list(some_list,*keys)
+        print(listings)
+        removal_index = int(input(f'Which {menu_name} would you like to remove?\n>> '))
+        renaming_list_via_index(some_list,removal_index)
         return main_menu(main_menu_input) 
     # # 4. Remove
     if menu_output == 4:
-        view_list(some_list,*keys)
+        listings = view_list(some_list,*keys)
+        print(listings)
         remove_entry(f'{menu_name}',some_list)
         return main_menu(main_menu_input) 
     else:
@@ -149,34 +146,34 @@ def orders_menu(orders):
     # 1. View
     if orders_menu_input == 1:
         orders_menu_view(orders)
-        return orders_menu(orders)
+        return main_menu(main_menu_input)
 
     # 2. New order
     if orders_menu_input == 2:
         new_customer_order(orders)
-        return orders_menu(orders)
+        return main_menu(main_menu_input)
 
     # 3. Update status
     if orders_menu_input == 3:
         orders_menu_view(orders)
         update_status(orders,('Preparing','Ready for collection','Out for delivery','Complete'))
-        return orders_menu(orders)
+        return main_menu(main_menu_input)
 
     # 4. Update Order
     if orders_menu_input == 4:
         orders_menu_view(orders)
-        renaming_list_index('Orders',orders)
-        return orders_menu(orders)
+        renaming_list_via_index('Orders',orders)
+        return main_menu(main_menu_input)
 
     # 5. Cancel
     if orders_menu_input == 5:
         orders_menu_view(orders)
         remove_entry('Order',orders)
-        return orders_menu(orders)
+        return main_menu(main_menu_input)
 
     else:
         print('\nInvalid option.')
-        return orders_menu(orders)
+        return main_menu(main_menu_input)
 
 products_list = []
 couriers_list = []
@@ -190,6 +187,7 @@ def menu_input(menu_name):
 3. Rename a {menu_name}\n\
 4. Remove a {menu_name}\n\
 >> '))
+    # cls()
     return menu_output
 def read_file(filename,loading_list):
         with open (f'{filename}.csv','r' ) as f:
@@ -206,9 +204,6 @@ def write_file(filename,loading_list):
                 dict_writer.writerows(loading_list)
         return
 
-read_file('products',products_list)
-read_file('couriers',couriers_list)
-read_file('orders',orders_list)
 
 def main_menu(main_input):
     if main_input == 0:
@@ -220,7 +215,7 @@ def main_menu(main_input):
     elif main_input == 1:
         while True:
             product_menu_output = menu_input('Product')
-            second_menu('Product', product_menu_output, products_list, "Name", "Cost")
+            second_menu('Product', product_menu_output, products_list,float, "Name", "Cost",)
             return
     elif main_input == 2:
         orders_menu(orders_list)
@@ -228,18 +223,28 @@ def main_menu(main_input):
     elif main_input == 3:
         while True:
             courier_menu_output = menu_input('Courier')
-            second_menu('Courier', courier_menu_output, couriers_list, "Name", "Number")
+            second_menu('Courier', courier_menu_output, couriers_list,str, "Name", "Number")
             return
     else:
         print('\nInvalid option.')
         return
 
-while True:
-    main_menu_input = int(input('\n--- Main Menu ---\n\
+
+        
+
+if __name__ == '__main__':
+    cls = lambda: os.system('cls')
+    read_file('products',products_list)
+    read_file('couriers',couriers_list)
+    read_file('orders',orders_list)
+    while True:
+        main_menu_input = int(input('\n--- Main Menu ---\n\
 0. Exit\n\
 1. Product Menu\n\
 2. Order Menu\n\
 3. Courier Menu \n\
 >> '))
-    main_menu(main_menu_input)
+        # cls()
+        main_menu(main_menu_input)
+        
         
