@@ -213,7 +213,7 @@ Project Link: [https://github.com/Numan-M/Cafe](https://github.com/Numan-M/Cafe)
 ## Acknowledgments
 
 * Patrick Cando
-* Carlton Nunes
+* Carlton Nunes Desouza
 * Sheikh Osman
 * Faaruq M.
 
