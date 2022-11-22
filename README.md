@@ -215,7 +215,7 @@ Project Link: [https://github.com/Numan-M/Cafe](https://github.com/Numan-M/Cafe)
 * Patrick Cando
 * Carlton Nunes Desouza
 * Sheikh Osman
-* Faaruq M.
+* Faaruq 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
