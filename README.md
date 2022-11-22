@@ -7,9 +7,6 @@ A CLI program able to view, add, rename and delete products, couriers, orders fr
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
