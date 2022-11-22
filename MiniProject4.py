@@ -48,15 +48,15 @@ def second_menu(menu_name,menu_output,some_list,type,*keys):
         return main_menu(main_menu_input)
     # # 2. Add
     if menu_output == 2:
-        new_entry = input(f'\nEnter {menu_name} {keys[0]}\n>> ')
-        new_entry_input = input(f'\nEnter {menu_name} {keys[1]}\n>> ')
+        new_entry = input(f'Enter {menu_name} {keys[0]}\n>> ')
+        new_entry_input = input(f'Enter {menu_name} {keys[1]}\n>> ')
         adding_to_list(new_entry,new_entry_input,some_list,type,*keys)
         return main_menu(main_menu_input) 
     # # 3. Rename
     if menu_output == 3:
         listings = view_list(some_list,*keys)
         print(listings)
-        removal_index = int(input(f'Which {menu_name} would you like to remove?\n>> '))
+        removal_index = int(input(f'Which {menu_name} would you like to rename?\n>> '))
         renaming_list_via_index(some_list,removal_index)
         return main_menu(main_menu_input) 
     # # 4. Remove
@@ -73,8 +73,9 @@ def second_menu(menu_name,menu_output,some_list,type,*keys):
 # # 1. View
 def orders_menu_view(orders):
     i = 0
+    line = ''
     for _ in orders:
-        print(f'''
+        line2 = f'''
 {i}.
 ______________________________________________________________________
 Customer Name: {orders[i]["customer_name"]}
@@ -84,8 +85,10 @@ Courier: {orders[i]["courier"]}
 Order Status: {orders[i]["status"]}
 Items: {orders[i]["items"]}
 ______________________________________________________________________'''
-)
+
         i += 1
+        line += line2
+    return line
         
 # # 2. New Order
 def new_customer_order(orders):
@@ -116,8 +119,8 @@ def new_customer_order(orders):
     "status": customer_order_status,
     "items": customer_items
     }
-
-    return orders.append(new_order)
+    orders.append(new_order)
+    return orders
 # # 3. Update status
 def update_status(orders,status):
     update_order_status_index = int(input('\nEnter order number:\n>> '))
@@ -128,7 +131,7 @@ def update_status(orders,status):
     update_order_status = int(input('\n>> '))
     print(f'\nOrder status: \'{orders[update_order_status_index]["status"]}\' has been updated to \'{status[update_order_status]}\'.')
     orders[update_order_status_index]['status'] = status[update_order_status]
-    return
+    return orders
 
 def orders_menu(orders):
     orders_menu_input = int(input(f'\n--- Orders Menu ---\n\
@@ -139,13 +142,15 @@ def orders_menu(orders):
 4. Update Existing Order\n\
 5. Cancel Order\n\
 >> ')) 
+    cls()
     # 0. Return
     if orders_menu_input == 0:
         return
 
     # 1. View
     if orders_menu_input == 1:
-        orders_menu_view(orders)
+        order_listings = orders_menu_view(orders)
+        print(order_listings)
         return main_menu(main_menu_input)
 
     # 2. New order
@@ -172,7 +177,7 @@ def orders_menu(orders):
         return main_menu(main_menu_input)
 
     else:
-        print('\nInvalid option.')
+        print('Invalid option.')
         return main_menu(main_menu_input)
 
 products_list = []
@@ -180,14 +185,14 @@ couriers_list = []
 orders_list = []
 
 def menu_input(menu_name):
-    menu_output = int(input(f'\n--- {menu_name} Menu ---\n\
+    menu_output = int(input(f'--- {menu_name} Menu ---\n\
 0. Return\n\
 1. View {menu_name}\'s menu\n\
 2. Add a {menu_name}\n\
 3. Rename a {menu_name}\n\
 4. Remove a {menu_name}\n\
 >> '))
-    # cls()
+    cls()
     return menu_output
 def read_file(filename,loading_list):
         with open (f'{filename}.csv','r' ) as f:
@@ -237,14 +242,15 @@ if __name__ == '__main__':
     read_file('products',products_list)
     read_file('couriers',couriers_list)
     read_file('orders',orders_list)
+    cls()
     while True:
-        main_menu_input = int(input('\n--- Main Menu ---\n\
+        main_menu_input = int(input('--- Main Menu ---\n\
 0. Exit\n\
 1. Product Menu\n\
 2. Order Menu\n\
 3. Courier Menu \n\
 >> '))
-        # cls()
+        cls()
         main_menu(main_menu_input)
         
         
