@@ -141,19 +141,29 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
 - [ ] Week 1
   ``` 
   As a user I want to:
-create a product and add it to a list
-view all products
-STRETCH update or delete a product
+  create a product and add it to a list
+  view all products
+  STRETCH update or delete a product
 
 
 - [ ] Week 2
-
+  ```
+  As a user I want to:
+  create a product or order and add it to a list
+  view all products or orders
+  STRETCH I want to be able to update or delete a product or orde
 
 - [ ] Week 3
-
+  ```
+  As a user I want to:
+  create a product, courier, or order and add it to a list
+  view all products, couriers, or orders
+  update the status of an order
+  persist my data (products and couriers)
+  STRETCH update or delete a product, order, or courier
 
 - [ ] Week 4
-
+  ```
 
 
 
