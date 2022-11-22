@@ -61,35 +61,58 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+### Main Menu
+![image](https://user-images.githubusercontent.com/115251414/203418269-601dfef1-4be0-4fd1-9f13-021d1a7ad781.png)
 
 ### Products Menu
+![image](https://user-images.githubusercontent.com/115251414/203418410-616d444c-f58c-4405-aa9b-1c600fe24149.png)
+
 * 1. Display
+![image](https://user-images.githubusercontent.com/115251414/203418465-5c8b4c04-32f9-45d4-821c-f367f54670ea.png)
 
 * 2. Add
+![image](https://user-images.githubusercontent.com/115251414/203420935-ac52e54a-4439-4670-97f4-861ff49c702c.png)
 
 * 3. Rename
+![image](https://user-images.githubusercontent.com/115251414/203421085-40872e1c-721a-4510-bd81-3c342d3e0275.png)
 
 * 4. Remove
+![image](https://user-images.githubusercontent.com/115251414/203421143-7c005856-c40e-4ff3-b3a7-390dc7eec6cf.png)
 
-### Products Menu
+### Couriers Menu
+![image](https://user-images.githubusercontent.com/115251414/203421616-2f5214f4-9210-4f5d-94eb-9ae7d77b9609.png)
 * 1. Display
 
+![image](https://user-images.githubusercontent.com/115251414/203421662-892b263f-04ea-4af8-ab03-04dfeca51396.png)
+
 * 2. Add
+![image](https://user-images.githubusercontent.com/115251414/203421852-fd4ad7a0-f466-4587-81be-ec83d41e3b5c.png)
 
 * 3. Rename
+![image](https://user-images.githubusercontent.com/115251414/203421960-3494243e-1a85-4ada-9889-db65aca810d4.png)
+![image](https://user-images.githubusercontent.com/115251414/203421984-527c9d9e-f5cf-4318-96bc-78a87b04b22f.png)
 
 * 4. Remove
+![image](https://user-images.githubusercontent.com/115251414/203422028-e304291a-ed47-4c97-a9ad-f81c8124474f.png)
 
 ### Orders Menu
+![image](https://user-images.githubusercontent.com/115251414/203422083-23afa487-ab64-42a5-92bf-2e40613f58f2.png)
+
 * 1. Display
+![image](https://user-images.githubusercontent.com/115251414/203422226-d1e933bc-8d5c-41df-995e-1b8e382c377c.png)
 
 * 2. Add
+![image](https://user-images.githubusercontent.com/115251414/203422779-9cc04f1b-4fb4-4bcf-8e8b-e39b6657d290.png)
+![image](https://user-images.githubusercontent.com/115251414/203422880-d0039dad-544a-42da-80ca-1aeb73453715.png)
 
 * 3. Update status
+![image](https://user-images.githubusercontent.com/115251414/203423253-ca5e7e4d-3e1e-4ff6-8d57-fc4032c55872.png)
 
 * 4. Update all
+![image](https://user-images.githubusercontent.com/115251414/203424212-5fa5958b-eb0d-4f03-9a32-481b285c2c68.png)
 
-* 5. Remove
+* 5. Cancel 
+![image](https://user-images.githubusercontent.com/115251414/203424291-47bc22ed-b1ac-499b-8df5-8aa5b264c420.png)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
