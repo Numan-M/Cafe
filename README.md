@@ -63,33 +63,33 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
 ## Usage
 
 ### Products Menu
-* 1 Display
+* 1. Display
 
-* 2 Add
+* 2. Add
 
-* 3 Rename
+* 3. Rename
 
-* 4 Remove
+* 4. Remove
 
 ### Products Menu
-* 1 Display
+* 1. Display
 
-* 2 Add
+* 2. Add
 
-* 3 Rename
+* 3. Rename
 
-* 4 Remove
+* 4. Remove
 
 ### Orders Menu
-* 1 Display
+* 1. Display
 
-* 2 Add
+* 2. Add
 
-* 3 Update status
+* 3. Update status
 
-* 4 Update all
+* 4. Update all
 
-* 4 Remove
+* 5. Remove
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
