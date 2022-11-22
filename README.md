@@ -14,7 +14,6 @@ A CLI program able to view, add, rename and delete products, couriers, orders fr
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -41,26 +40,22 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Prerequisites
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
  ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/github_username/repo_name.git
    ```
-3. Install NPM packages
+2. Create a virtual environment
    ```sh
-   npm install
+   python3 -m venv venv
+   source ./venv/bin/activate
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+3. Install dependencies
+   * pip install
+  ```sh
+  pip install -r requirements.txt
+  ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
