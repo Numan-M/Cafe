@@ -144,7 +144,7 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
   create a product and add it to a list
   view all products
   STRETCH update or delete a product
-
+  ```
 
 - [ ] Week 2
   ```
@@ -152,7 +152,8 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
   create a product or order and add it to a list
   view all products or orders
   STRETCH I want to be able to update or delete a product or orde
-
+  ```
+  
 - [ ] Week 3
   ```
   As a user I want to:
@@ -161,10 +162,20 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
   update the status of an order
   persist my data (products and couriers)
   STRETCH update or delete a product, order, or courier
-
+  ```
+  
 - [ ] Week 4
   ```
-
+  To show that our code works, we will also need to write unit tests to prove that
+  our app works correctly.
+  As a user I want to:
+• create a product, courier, or order dictionary and add it to a list
+• view all products, couriers, or orders
+• update the status of an order
+• persist my data
+• STRETCH update or delete a product, order, or courier
+• BONUS list orders by status or courier
+  ```
 
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
