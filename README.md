@@ -115,15 +115,20 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
 * 2. Add
 
 ![image](https://user-images.githubusercontent.com/115251414/203422779-9cc04f1b-4fb4-4bcf-8e8b-e39b6657d290.png)
+
 ![image](https://user-images.githubusercontent.com/115251414/203422880-d0039dad-544a-42da-80ca-1aeb73453715.png)
 
+
 * 3. Update status
+
 ![image](https://user-images.githubusercontent.com/115251414/203423253-ca5e7e4d-3e1e-4ff6-8d57-fc4032c55872.png)
 
 * 4. Update all
+
 ![image](https://user-images.githubusercontent.com/115251414/203424212-5fa5958b-eb0d-4f03-9a32-481b285c2c68.png)
 
 * 5. Cancel 
+
 ![image](https://user-images.githubusercontent.com/115251414/203424291-47bc22ed-b1ac-499b-8df5-8aa5b264c420.png)
 
 
