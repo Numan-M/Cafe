@@ -133,10 +133,24 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Week 1
+  ``` 
+  As a user I want to:
+create a product and add it to a list
+view all products
+STRETCH update or delete a product
+
+
+- [ ] Week 2
+
+
+- [ ] Week 3
+
+
+- [ ] Week 4
+
+
+
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
