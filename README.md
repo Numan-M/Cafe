@@ -7,6 +7,9 @@ A CLI program able to view, add, rename and delete products, couriers, orders fr
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#Design Choices">Design Choices</a></li>
+      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -32,7 +35,7 @@ This CLI project began my journey of programming from a beginner level, polishin
 My approach to this project took strong inspiration from the term clean code, I did everything in my effort to avoid "redundant code" whilst ensuring idempotency was achieved in all aspects. Following the user's input a set of simple menus appear similar in functionality and appearance forming the backbone of the application. Effortless transition can be made to and from these menus with respect to the users commands. Alteration of the specs of the code on a weekly basis, imitated the working environment of collaborating with clients which brought about feelings of uncertainty as to how the final product would turn out. Many times of the course of the 6 weeks, time spent on implementing ideas were removed in their entirety however, the skills learned from the initial implentation were retained. In addition to learning new programming skills, certain practices were also acquired through refactoring and simplifying code.
 
 # Areas to Improve.
-With more time I'd like to implement week 5 and 6 of the clients spec but with the current iteration of the program, it would greatly benefit from implementing try-except blocks for when the user is asked to enter a value requiring a certain datatype.
+With more time I'd like to implement week 5 and 6 of the clients spec but, with the current iteration of the program it would greatly benefit from implementing try-except blocks for when the user is asked to enter a value requiring a certain datatype.
 
 
 <!-- GETTING STARTED -->
