@@ -168,13 +168,14 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
   ```
   To show that our code works, we will also need to write unit tests to prove that
   our app works correctly.
+  
   As a user I want to:
-• create a product, courier, or order dictionary and add it to a list
-• view all products, couriers, or orders
-• update the status of an order
-• persist my data
-• STRETCH update or delete a product, order, or courier
-• BONUS list orders by status or courier
+  create a product, courier, or order dictionary and add it to a list
+  view all products, couriers, or orders
+  update the status of an order
+  persist my data
+  STRETCH update or delete a product, order, or courier
+  BONUS list orders by status or courier
   ```
 
 
