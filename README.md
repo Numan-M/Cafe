@@ -179,7 +179,7 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
   ```
 
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,18 +203,19 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Numan Mahmood - [LinkedIn](https://www.linkedin.com/in/numan-mahmood-197951242/) - Numan_Mahmood@hotmail.co.uk
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/Numan-M/Cafe](https://github.com/Numan-M/Cafe)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* Patrick Cando
+* Carlton Nunes
+* Sheikh Osman
+* Faaruq M.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
