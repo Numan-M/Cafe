@@ -55,7 +55,7 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
   pip install -r requirements.txt
   ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p> align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->
