@@ -28,7 +28,7 @@ A CLI program able to view, add, rename and delete products, couriers, orders fr
 ## About The Project
 This CLI project began my journey of programming from a beginner level, polishing my skills along the way, getting a good grasp of the basics of Python and most importantly shining a light on unit testing a concept that was very new to me but made complete sense when brought to my attention. 
 
-# Design Choices
+### Design Choices
 My approach to this project took strong inspiration from the term clean code, I did everything in my effort to avoid "redundant code" whilst ensuring idempotency was achieved in all aspects. Following the user's input a set of simple menus appear similar in functionality and appearance forming the backbone of the application. Effortless transition can be made to and from these menus with respect to the users commands. Alteration of the specs of the code on a weekly basis, imitated the working environment of collaborating with clients which brought about feelings of uncertainty as to how the final product would turn out. Many times of the course of the 6 weeks, time spent on implementing ideas were removed in their entirety however, the skills learned from the initial implentation were retained. In addition to learning new programming skills, certain practices were also acquired through refactoring and simplifying code.
 
 # Areas to Improve.
