@@ -44,7 +44,7 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone git@github.com:Numan-M/Cafe.git
    ```
 2. Create a virtual environment
    ```sh
