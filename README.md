@@ -1,3 +1,4 @@
+<a name="readme-top"></a>
 # CLI Application for a Café
 A CLI program able to view, add, rename and delete products, couriers, orders from a list of dictionaries persisting the stored data. 
 
@@ -55,7 +56,7 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
   pip install -r requirements.txt
   ```
 
-<p> align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->
