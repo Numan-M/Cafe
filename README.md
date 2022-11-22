@@ -52,7 +52,6 @@ With more time I'd like to implement week 5 and 6 of the clients spec but, with 
    source ./venv/bin/activate
    ```
 3. Install dependencies
-   * pip install
   ```sh
   pip install -r requirements.txt
   ```
