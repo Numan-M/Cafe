@@ -56,8 +56,8 @@ def second_menu(menu_name,menu_output,some_list,type,*keys):
     if menu_output == 3:
         listings = view_list(some_list,*keys)
         print(listings)
-        removal_index = int(input(f'Which {menu_name} would you like to rename?\n>> '))
-        renaming_list_via_index(some_list,removal_index)
+        renaming_index = int(input(f'Which {menu_name} would you like to rename?\n>> '))
+        renaming_list_via_index(some_list,renaming_index)
         return main_menu(main_menu_input) 
     # # 4. Remove
     if menu_output == 4:
@@ -97,7 +97,8 @@ def new_customer_order(orders):
     customer_number = input('Enter your number\n>>')
     customer_order_status = 'Preparing'
 
-    view_list(products_list,"Name","Cost")
+    listings = view_list(products_list,"Name","Cost")
+    print(listings)
     customer_items = []
     print('\nEnter one product. Leave blank when you have chosen your products.')
     while True:
@@ -108,7 +109,8 @@ def new_customer_order(orders):
             break
     customer_items = ','.join(set(customer_items))
     
-    view_list(couriers_list,"Name","Number")
+    listings_2 = view_list(couriers_list,"Name","Number")
+    print(listings_2)
     customer_courier_index = int(input('\nPlease pick from the available couriers.\n>>'))
     
     new_order = {
@@ -160,19 +162,23 @@ def orders_menu(orders):
 
     # 3. Update status
     if orders_menu_input == 3:
-        orders_menu_view(orders)
+        listings = orders_menu_view(orders)
+        print(listings)
         update_status(orders,('Preparing','Ready for collection','Out for delivery','Complete'))
         return main_menu(main_menu_input)
 
     # 4. Update Order
     if orders_menu_input == 4:
-        orders_menu_view(orders)
-        renaming_list_via_index('Orders',orders)
+        listings = orders_menu_view(orders)
+        print(listings)
+        renaming_order_index = int(input('Which order would you like to rename?\n>> '))
+        renaming_list_via_index(orders,renaming_order_index)
         return main_menu(main_menu_input)
 
     # 5. Cancel
     if orders_menu_input == 5:
-        orders_menu_view(orders)
+        listings = orders_menu_view(orders)
+        print(listings)
         remove_entry('Order',orders)
         return main_menu(main_menu_input)
 
