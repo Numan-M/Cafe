@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 # CLI Application for a Café
-A CLI program able to view, add, rename and delete products, couriers, orders from a list of dictionaries persisting the stored data. 
+A CLI program able to view, add, rename and delete products, couriers, orders from a list of dictionaries persisting the data. 
 
 <!-- TABLE OF CONTENTS -->
 <details>
